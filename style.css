@@ -1,3 +1,39 @@
 *, *::after, *::before{
     box-sizing: border-box;
 }
+body{
+ background-color:#333;
+ color:white;
+ height: 100vh;
+ margin:0;
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    background-color:#006699;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding:3rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    width:80%;
+}
+.title{
+    font-size: 1.5em;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+.password{
+    width:80%;
+    text-align:center;
+    background-color: white;
+    color:black;
+    padding:1em 2em;
+    border-radius:10px;
+    word-break: break-all;
+}
