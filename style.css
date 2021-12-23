@@ -41,7 +41,7 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 5rem;
-    row-gap: 1rem;
+    row-gap: .5rem;
     align-items:center;
 }
 
@@ -100,6 +100,25 @@ input[type=range] {
 
 
 
+
+
+.generatePassword{
+    grid-column: 1 / 3;
+    margin-top:2rem;
+    background-color: white;
+    color:black;
+    font-size: 1.2rem;
+    padding:.5rem 1rem;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    border-radius:5px;
+    transition: background-color,color 350ms ease-in-out;
+}
+.generatePassword:hover{
+ background-color: #083146;
+ color:wheat;
+}
 
   
 
