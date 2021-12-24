@@ -44,6 +44,10 @@ body{
     row-gap: .5rem;
     align-items:center;
 }
+.rangeAndNumber{
+  display: flex;
+  align-items: center;
+}
 
 
 
@@ -56,6 +60,9 @@ body{
 
 input[type=range] {         
     background: whitesmoke; /* Otherwise white in Chrome */
+    height: 3rem;
+    cursor: pointer;
+    
   }
   
   input[type=range]::-ms-track {
@@ -63,6 +70,7 @@ input[type=range] {
     background: whitesmoke; 
     border-color: whitesmoke;
     color: whitesmoke;
+    
   }
   input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;

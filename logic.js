@@ -4,16 +4,25 @@
 
 
 // .....All Element Selection will be undernith here...........
+const characterAmountRange = document.getElementById('characterAmountRange')
+const characterAmountNumber = document.getElementById('characterAmountNumber')
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
 // .....All EventListener go undernith here...........
+characterAmountRange.addEventListener('input',syncCharacterAmount)
+characterAmountNumber.addEventListener('input',syncCharacterAmount)
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
 // ......All Function will go here undernith..........
+function syncCharacterAmount(e){
+const value = e.target.value
+characterAmountNumber.value = value
+characterAmountRange.value = value
+}
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 //All code will be deleted here.............
@@ -22,7 +31,7 @@ function printOut(text){
     div.innerHTML = text
     document.body.appendChild(div)
 }
-// addEventListener('click',()=>{
+// characterAmountRange.addEventListener('click',()=>{
 //     alert("this is working")
 // })
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
