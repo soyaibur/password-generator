@@ -60,7 +60,7 @@ body{
 
 input[type=range] {         
     background: whitesmoke; /* Otherwise white in Chrome */
-    height: 3rem;
+    height: 1rem;
     cursor: pointer;
     
   }

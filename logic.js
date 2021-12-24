@@ -6,6 +6,7 @@
 // .....All Element Selection will be undernith here...........
 const characterAmountRange = document.getElementById('characterAmountRange')
 const characterAmountNumber = document.getElementById('characterAmountNumber')
+const form = document.getElementById('passwordGeneratorForm')
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -13,6 +14,11 @@ const characterAmountNumber = document.getElementById('characterAmountNumber')
 // .....All EventListener go undernith here...........
 characterAmountRange.addEventListener('input',syncCharacterAmount)
 characterAmountNumber.addEventListener('input',syncCharacterAmount)
+form.addEventListener('submit',e=>{
+    e.preventDefault()
+    
+})
+
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -23,6 +29,8 @@ const value = e.target.value
 characterAmountNumber.value = value
 characterAmountRange.value = value
 }
+
+
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 //All code will be deleted here.............
