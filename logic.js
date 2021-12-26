@@ -1,7 +1,25 @@
 // ....Univesal declaration and others......
+const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97,122)
+const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65,90)
+const NUMBER_CHAR_CODES = arrayFromLowToHigh(48,57)
+const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33,47).concat(
+    arrayFromLowToHigh(58,64)
+).concat(
+    arrayFromLowToHigh(91,96)
+).concat(
+    arrayFromLowToHigh(123,126)
+)
+
+
+function arrayFromLowToHigh(low,high){
+    const array = []
+    for(let i = low; i <= high; i++){
+        array.push(i)
+    }
+    return array
+}
+
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
 
 // .....All Element Selection will be undernith here...........
 const characterAmountRange = document.getElementById('characterAmountRange')
@@ -12,6 +30,8 @@ const includeUppercase = document.getElementById('includeUppercase')
 const includeNumber = document.getElementById('includeNumber')
 const includeSymbols = document.getElementById('includeSymbols')
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 
 
@@ -43,6 +63,15 @@ function generatePassword(characterAmount, includeUppercase, includeNumber, incl
  
 }
 
+
+function arrayFromLowToHigh(low,high){
+    const array = []
+    for(let i = low; i <= high; i++){
+        array.push(i)
+    }
+    return array
+}
+
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 //All code will be deleted here.............
@@ -53,5 +82,5 @@ function printOut(text){
 }
 // .addEventListener('click',()=>{
 //     alert("this is working")
-// })
+// }) 
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
