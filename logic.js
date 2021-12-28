@@ -24,9 +24,6 @@ const showPassword = document.getElementsById('password')
 
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-
-
-
 // .....All EventListener go undernith here...........
 characterAmountRange.addEventListener('input',syncCharacterAmount)
 characterAmountNumber.addEventListener('input',syncCharacterAmount)
@@ -43,7 +40,6 @@ form.addEventListener('submit',e=>{
 })
 
 // ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 
 // ......All Function will go here undernith..........
